@@ -14,9 +14,7 @@
   
     <br>
     <br>
-    <br>
-    <br>
-<br>
+
 
     <div style="width: 100%; display: flex; background: url('Untitled\ design\ \(30\).png'); height: 600px; background-position: center; background-size: cover;">
         <div style="align-items: center; justify-content: center; margin:0 auto; color: white; text-align: center;">
@@ -50,20 +48,34 @@
     </div>
     
     <header>
-        <nav class="navbar">
-          <div class="navbar-logo">
-            <a href="#">Stellxr</a>
-          </div>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="web.html">Website</a></li>
-              <li><a href="freelancing.html">Freelancing</a></li>
-              <li><a href="https://wa.me/919037452346">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="#">Stellxr</a>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="web.html">Website</a></li>
+            <li><a href="freelancing.html">Freelancing</a></li>
+            <li><a href="https://wa.me/919037452346">Contact</a></li>
+          </ul>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    
+      <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.navbar-links ul');
+      
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>
+      
 </body>
 </html>
