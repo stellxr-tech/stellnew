@@ -44,21 +44,26 @@
     <div id="preloader">
         <img src="Untitled design (1).gif" alt="Loading...">
     </div>
-  <header>
-    <nav class="navbar">
-      <div class="navbar-logo">
-        <a href="#">Stellxr</a>
-      </div>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="web.html">Website</a></li>
-          <li><a href="freelancing.html">Freelancing</a></li>
-          <li><a href="https://wa.me/919037452346">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="#">Stellxr</a>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="web.html">Website</a></li>
+            <li><a href="freelancing.html">Freelancing</a></li>
+            <li><a href="https://wa.me/919037452346">Contact</a></li>
+          </ul>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
     <!-- Hero Section -->
     <div class="hero">
         <div class="hero-text">
@@ -71,7 +76,7 @@
     <div class="product-cards">
 
         <div class="product-card">
-            <img src="Untitled design (28).png" alt="Product Image">
+            <img src="Untitled design (42).png" alt="Product Image">
             <h1>FREELANCING</h1>
             <p>
                 Posters, Logos, Resumes, CVs, Menus, Brand Patterns, Brand Mock-ups, Color Schemes, Applications and UI concepts are inclusive.</p>
@@ -79,7 +84,7 @@
         </div>
 
         <div class="product-card">
-            <img src="Untitled design (26).png" alt="Product Image">
+            <img src="Untitled design (43).png" alt="Product Image">
             <h1>WEB DESIGNING</h1>
             <p>Websites with hosting and domain plans with custom made admin panels and live update system. Also includes live discussions with clients
             </p>
@@ -87,7 +92,7 @@
         </div>
 
         <div class="product-card">
-            <img src="Untitled design (29).png" alt="Product Image">
+            <img src="Untitled design (44).png" alt="Product Image">
             <h1>Genesis Labs</h1>
             <p>Creative workshop of Stellxr where we work on aspiring projects for the future. Currently working on Machine Learning projects.
 
@@ -158,5 +163,14 @@
           }, 2000); // Adjust the time as needed
       });
       </script>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.navbar-links ul');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 </body>
 </html>
